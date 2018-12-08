@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "prisma": {
+      "schemaPath": "src/generated/prisma.graphql",
+      "includes": "[src/**/*.graphql]",
+      "extensions": {
+        "endpoints": {
+          "default": "${env:PRISMA_ENDPOINT}"
+        },
+        "codegen": {
+          "generator": "prisma-binding",
+          "language": "typescript",
+          "output": {
+            "binding": "src/generated/prisma.ts"
+          }
+        },
+        "prisma": "prisma/prisma.yml",
+        "customDirectives": {
+          "directive": "@unique on FIELD"
+        }
+      }
+    }
+  }
+}
