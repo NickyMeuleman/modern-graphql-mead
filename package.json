@@ -21,7 +21,7 @@
     "tsc:watch": "tsc --watch --skipLibCheck",
     "copyfiles": "cd src && copyfiles ./**/*.graphql ../dist/src",
     "heroku-postbuild": "npm run build",
-    "test": "env-cmd ./config/test.env jest"
+    "test": "env-cmd ./config/test.env jest --runInBand"
   },
   "keywords": [],
   "author": "",
