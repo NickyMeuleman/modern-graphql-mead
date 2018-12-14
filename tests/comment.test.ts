@@ -3,7 +3,6 @@ import { getClient } from "./utils/getClient";
 import {
   userOne,
   seedDatabase,
-  postOne,
   commentOne,
   commentTwo
 } from "./utils/seedDatabase";

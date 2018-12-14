@@ -1,5 +1,5 @@
 import "cross-fetch/polyfill";
-import { gql, ApolloQueryResult } from "apollo-boost";
+import { ApolloQueryResult } from "apollo-boost";
 import prisma from "../src/prisma";
 import { seedDatabase, userOne } from "./utils/seedDatabase";
 import { getClient } from "./utils/getClient";
